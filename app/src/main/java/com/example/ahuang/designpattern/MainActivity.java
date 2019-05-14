@@ -15,11 +15,15 @@ import com.example.ahuang.designpattern.adapter.MainAdapter;
 import com.example.ahuang.designpattern.adaptermode.AdapterActivity;
 import com.example.ahuang.designpattern.bridge.BridgeActivity;
 import com.example.ahuang.designpattern.builderpattern.BuilderActivity;
+import com.example.ahuang.designpattern.commandmode.CommandModeActivity;
 import com.example.ahuang.designpattern.decoratemode.DecorateActivity;
 import com.example.ahuang.designpattern.facademode.FacadeActivity;
 import com.example.ahuang.designpattern.factorymethod.FactoryMethodActivity;
 import com.example.ahuang.designpattern.flyweight.FlyweightActivity;
+import com.example.ahuang.designpattern.mediator.MediatorActivity;
 import com.example.ahuang.designpattern.prototype.PrototypeActivity;
+import com.example.ahuang.designpattern.proxymode.ProxyActivity;
+import com.example.ahuang.designpattern.responsiblechain.ResponsibilityChainActivity;
 import com.example.ahuang.designpattern.singleton.SingletonActivity;
 
 import java.util.ArrayList;
@@ -54,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         dataList.add("装饰模式");
         dataList.add("外观模式");
         dataList.add("享元模式");
+        dataList.add("代理模式");
+        dataList.add("责任链模式");
+        dataList.add("命令模式");
+        dataList.add("中介者模式");
 
         // 设置RecyclerView
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
@@ -97,6 +105,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 10:
                         startActivity(new Intent(MainActivity.this,FlyweightActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(MainActivity.this, ProxyActivity.class));
+                        break;
+                    case 12:
+                        startActivity(new Intent(MainActivity.this, ResponsibilityChainActivity.class));
+                        break;
+                    case 13:
+                        startActivity(new Intent(MainActivity.this, CommandModeActivity.class));
+                        break;
+                    case 14:
+                        startActivity(new Intent(MainActivity.this, MediatorActivity.class));
                         break;
                 }
             }
