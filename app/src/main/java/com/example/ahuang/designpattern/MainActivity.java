@@ -21,10 +21,14 @@ import com.example.ahuang.designpattern.facademode.FacadeActivity;
 import com.example.ahuang.designpattern.factorymethod.FactoryMethodActivity;
 import com.example.ahuang.designpattern.flyweight.FlyweightActivity;
 import com.example.ahuang.designpattern.mediator.MediatorActivity;
+import com.example.ahuang.designpattern.memotomode.MemotoActivity;
+import com.example.ahuang.designpattern.observermode.ObserverActivity;
 import com.example.ahuang.designpattern.prototype.PrototypeActivity;
 import com.example.ahuang.designpattern.proxymode.ProxyActivity;
 import com.example.ahuang.designpattern.responsiblechain.ResponsibilityChainActivity;
 import com.example.ahuang.designpattern.singleton.SingletonActivity;
+import com.example.ahuang.designpattern.statemode.StateModeActivity;
+import com.example.ahuang.designpattern.strategymode.StrategyModeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
         dataList.add("责任链模式");
         dataList.add("命令模式");
         dataList.add("中介者模式");
+        dataList.add("备忘录模式");
+        dataList.add("观察者模式");
+        dataList.add("状态模式");
+        dataList.add("策略模式");
 
         // 设置RecyclerView
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
@@ -117,6 +125,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 14:
                         startActivity(new Intent(MainActivity.this, MediatorActivity.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, MemotoActivity.class));
+                        break;
+                    case 16:
+                        startActivity(new Intent(MainActivity.this, ObserverActivity.class));
+                        break;
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, StateModeActivity.class));
+                        break;
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, StrategyModeActivity.class));
                         break;
                 }
             }
