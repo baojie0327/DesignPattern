@@ -12,7 +12,7 @@ package com.example.ahuang.designpattern.strategymode;
  * since 2019 06 17
  */
 public class NewCustomerStrategy implements IDiscountStrategy {
-    
+
     @Override
     public double getPrice(double count) {
         System.out.println("-----新用户报价策略----");
