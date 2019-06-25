@@ -29,6 +29,7 @@ import com.example.ahuang.designpattern.responsiblechain.ResponsibilityChainActi
 import com.example.ahuang.designpattern.singleton.SingletonActivity;
 import com.example.ahuang.designpattern.statemode.StateModeActivity;
 import com.example.ahuang.designpattern.strategymode.StrategyModeActivity;
+import com.example.ahuang.designpattern.templatemode.TemplateMethodActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         dataList.add("观察者模式");
         dataList.add("状态模式");
         dataList.add("策略模式");
+        dataList.add("模板方法模式");
 
         // 设置RecyclerView
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
@@ -137,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 18:
                         startActivity(new Intent(MainActivity.this, StrategyModeActivity.class));
+                        break;
+                    case 19:
+                        startActivity(new Intent(MainActivity.this, TemplateMethodActivity.class));
                         break;
                 }
             }
