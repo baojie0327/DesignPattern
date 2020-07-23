@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         dataList.add("状态模式");
         dataList.add("策略模式");
         dataList.add("模板方法模式");
+        dataList.add("测试模式");
 
         // 设置RecyclerView
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
@@ -142,6 +143,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 19:
                         startActivity(new Intent(MainActivity.this, TemplateMethodActivity.class));
+                        break;
+                    case 20:
+                        startActivity(new Intent(MainActivity.this, TestActivity.class));
                         break;
                 }
             }
